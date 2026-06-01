@@ -180,45 +180,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <form onsubmit="return login()">
-  <p>
-    <input class="w3-input w3-padding-16"
-           type="text"
-           id="Gmail"
-           placeholder="Gmail"
-           required>
-  </p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-padding-16" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> Login
+        </button>
+   
+    </form>
+  </div>
 
-  <p>
-    <input class="w3-input w3-padding-16"
-           type="password"
-           id="password"
-           placeholder="Password"
-           required>
-  </p>
-
-  <p>
-    <button class="w3-button w3-light-grey w3-padding-large"
-            type="submit">
-      Login
-    </button>
-  </p>
-</form>
-
-<script>
-function login() {
-    let Gamail = document.getElementById("Gmail").value;
-    let password = document.getElementById("password").value;
-
-    if (username === "admin" && password === "123456") {
-        alert("Login Successful!");
-        return true;
-    } else {
-        alert("Invalid Username or Password!");
-        return false;
-    }
-}
-</script>
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
